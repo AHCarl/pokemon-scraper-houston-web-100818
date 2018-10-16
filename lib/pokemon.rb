@@ -5,6 +5,7 @@ class Pokemon
   
 
 def initialize(args)
+  
 end
 
 def self.all 
@@ -25,6 +26,9 @@ def self.find(id, db)
 end
 
 end
+
+volt = Pokemon.new(id:2, name:"Voltorb", type:"electric")
+binding.pry
 
 
 # query = <<-SQL
