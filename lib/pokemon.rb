@@ -25,6 +25,10 @@ def self.find(id, db)
   self.new(id: pokemon[0][0], name: pokemon[0][1], type: pokemon[0][2], db: db)
 end
 
+def alter_hp(id, amount)
+  
+end
+
 end
 
 
