@@ -5,10 +5,6 @@ class Pokemon
   
 
 def initialize(args)
-  # @id = id 
-  # @name = name 
-  # @type = type 
-  # @db = db
 end
 
 def self.all 
