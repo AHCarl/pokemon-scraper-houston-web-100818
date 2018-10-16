@@ -26,7 +26,7 @@ def self.find(id, db)
 end
 
 def alter_hp(amt, db)
-    db.execute("UPDATE pokemon SET hp = ? WHERE id = ?", [amt], [id])
+    db.execute("UPDATE pokemon SET hp = ? WHERE id = ?", amt, id)
     self.hp = amt
 end
 
