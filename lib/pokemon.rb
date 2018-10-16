@@ -20,11 +20,12 @@ def self.save(name, type, db)
 end
 
 def self.find(id, db)
-    binding.pry
   pokemon = db.execute("SELECT * FROM pokemon WHERE id= (?)", id)
   found_mon = self.new(pokemon)
   found_mon.id = pokemon[0][0]
-  
+  found_mon.name = pokemon[0][1]
+  found_mon.type = pokemon[0][2]
+  found_mon.db = pokemon[0][3]
 end
 
 end
