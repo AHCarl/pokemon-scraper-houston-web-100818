@@ -21,6 +21,7 @@ def self.save
   SQL
   
   db.execute(query, self.name, self.type, self.db)
+  binding.pry
 end
 
 
