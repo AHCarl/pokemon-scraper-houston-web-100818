@@ -19,8 +19,8 @@ def self.save(name, type, db)
   db.execute("INSERT INTO pokemon (name, type) VALUES (?, ?)", name, type)
 end
 
-def self.find(db, id)
-  pokemon = db.execute("SELECT * FROM pokemon WHERE id= (?)", id)
+def self.find(id, db)
+  pokemon = db.execute("SELECT * FROM pokemon WHERE id= ?", id)
   found_mon = self.new(pokemon)
   found_mon.id = pokemon[0][0]
   found_mon.name = pokemon[0][1]
