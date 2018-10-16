@@ -20,7 +20,7 @@ end
 def self.find(id, db)
   pokemon = db.execute("SELECT * FROM pokemon WHERE id= (?)", id)
   found_mon = self.new(pokemon)
-  found_mon.id = pokemon[0]
+  found_mon.id = pokemon[0][0]
   
 end
 
