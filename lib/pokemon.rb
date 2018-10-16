@@ -25,8 +25,8 @@ def self.find(id, db)
   self.new(id: pokemon[0][0], name: pokemon[0][1], type: pokemon[0][2], db: db)
 end
 
-def alter_hp(id, amount)
-  
+def alter_hp(amount, db)
+  db.execute("UPDATE pokemon WHERE id = ? ")
 end
 
 end
