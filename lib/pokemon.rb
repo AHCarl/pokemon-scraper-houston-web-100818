@@ -15,7 +15,7 @@ def self.all
   @@all
 end 
 
-def self.save(name:, type:, db:)
+def self.save
   query = <<-SQL
     INSERT INTO pokemon (name, type, db) VALUES (?, ?, ?)
   SQL
