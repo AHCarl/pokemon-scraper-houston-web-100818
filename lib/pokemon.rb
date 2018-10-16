@@ -30,9 +30,7 @@ end
 
 end
 
-volt = Pokemon.new(id:2, name:"Voltorb", type:"electric")
-volt.name
-binding.pry
+
 
 
 # query = <<-SQL
