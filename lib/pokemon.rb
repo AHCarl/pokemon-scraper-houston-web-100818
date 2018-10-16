@@ -4,7 +4,7 @@ class Pokemon
   attr_accessor :name, :type, :id, :db
   
 
-def initialize(id:, name:, type:)
+def initialize(id:, name:, type:, db:)
   @id = id 
   @name = name 
   @type = type 
@@ -25,6 +25,7 @@ def self.find(id, db)
   found_mon.id = pokemon[0][0]
   found_mon.name = pokemon[0][1]
   found_mon.type = pokemon[0][2]
+  found_mon.db = pokemon[0][3]
   found_mon
 end
 
