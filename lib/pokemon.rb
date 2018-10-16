@@ -20,7 +20,8 @@ def self.save
     INSERT INTO pokemon (name, type, db) VALUES (?, ?, ?)
   SQL
   
-  DB[:conn].execute(query, self.name, self.type, self.db)
+  db.execute(query, self.name, self.type, self.db)
+  binding.pry
 end
 
 
