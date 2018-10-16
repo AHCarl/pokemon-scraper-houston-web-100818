@@ -20,14 +20,12 @@ end
 def self.find(id, db)
   pokemon = db.execute("SELECT * FROM pokemon WHERE id= (?)", id)
   found_mon = self.new(pokemon)
-  found_mon.id = pokemon
-  binding.pry
+  found_mon.id = pokemon[0]
+  
 end
 
 
 end
-
-Pokemon.find(1, @db)
 
 
 # query = <<-SQL
