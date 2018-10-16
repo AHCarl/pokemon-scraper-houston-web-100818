@@ -4,9 +4,9 @@ class Pokemon
 
 def initialize(keywords)
   @id = keywords[:id]
-  self.name = name 
-  self.type = type 
-  self.db = db
+  @name = keywords[:name] 
+  @type = keywords[:type] 
+  @db = keywords[:db]
 end
 
 def self.all 
@@ -21,7 +21,6 @@ def self.find(id, db)
   pokemon = db.execute("SELECT * FROM pokemon WHERE id= (?)", id)
   found_mon = self.new(pokemon)
   found_mon.id = pokemon
-  binding.pry
 end
 
 
