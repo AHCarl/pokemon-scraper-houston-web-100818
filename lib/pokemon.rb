@@ -9,7 +9,6 @@ def initialize(name:, type:, id:, db:)
   self.type = type 
   self.id = id 
   self.db = db
-  self.hp = 60
 end
 
 def self.all 
