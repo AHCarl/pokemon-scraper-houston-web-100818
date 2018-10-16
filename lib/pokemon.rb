@@ -15,8 +15,8 @@ def self.all
   @@all
 end 
 
-def self.save
-  db.execute
+def self.save(name, type, db)
+  db.execute("INSERT INTO pokemon (")
 end
 
 
