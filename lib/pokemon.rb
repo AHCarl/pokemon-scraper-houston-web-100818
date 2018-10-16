@@ -29,7 +29,6 @@ end
 
 end
 
-Pokemon.find(1, Pokemon.db)
 
 # query = <<-SQL
 #       INSERT INTO tweets (username, message) VALUES (?, ?)
