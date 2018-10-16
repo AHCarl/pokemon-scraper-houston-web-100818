@@ -6,4 +6,4 @@ all_pokemon = @db.execute("SELECT * FROM pokemon;")
 
 # test out your code here!
 
-Pokemon.save(2, "Voltorb", @db)
+Pokemon.find(2, @db)
