@@ -5,7 +5,8 @@ class Pokemon
   
 
 def initialize(args)
-  
+  args.each do |k,v|
+    
 end
 
 def self.all 
