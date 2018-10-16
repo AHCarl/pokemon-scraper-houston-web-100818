@@ -17,7 +17,7 @@ end
 
 def self.save(name:, type:, db:)
   query = <<-SQL
-    INSERT INTO pokemon (name, type, db) VALUES 
+    INSERT INTO pokemon (name, type, db) VALUES (?, ?, ?)
   SQL
 end
 
