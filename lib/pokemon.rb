@@ -20,7 +20,7 @@ def self.save(name, type, db)
 end
 
 def self.find(num, db)
-  pokemon = db.execute("SELECT * FROM pokemon WHERE id= ?", num)
+  pokemon = db.execute("SELECT * FROM pokemon WHERE id= ?", [num])
   found_mon = self.new(pokemon)
   found_mon.id = pokemon[0]
   found_mon.name = pokemon[1]
