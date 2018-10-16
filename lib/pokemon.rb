@@ -21,14 +21,14 @@ def self.find(id, db)
   pokemon = db.execute("SELECT * FROM pokemon WHERE id= (?)", id)
   found_mon = self.new(pokemon)
   binding.pry
-  found_mon.id = pokemon[0]
+  found_mon.id = pokemon[0][0]
   
 end
-
+binding.pry
 
 end
 
-Pokemon.find(1, Pokemon.self.db)
+Pokemon.find(1, Pokemon.db)
 
 # query = <<-SQL
 #       INSERT INTO tweets (username, message) VALUES (?, ?)
