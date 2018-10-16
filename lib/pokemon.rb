@@ -20,7 +20,7 @@ def self.save(name:, type:, db:)
     INSERT INTO pokemon (name, type, db) VALUES (?, ?, ?)
   SQL
   
-  DB[]
+  DB[:conn]
 end
 
 
