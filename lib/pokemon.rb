@@ -27,7 +27,7 @@ end
 
 end
 
-volt = Pokemon.new(self.id:2, self.name:"Voltorb", self.type:"electric")
+volt = Pokemon.new(id:2, name:"Voltorb", type:"electric")
 binding.pry
 
 
