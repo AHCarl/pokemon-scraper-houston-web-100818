@@ -20,16 +20,16 @@ def self.save(name:, type:, db:)
     INSERT INTO pokemon (name, type, db) VALUES (?, ?, ?)
   SQL
   
-  DB[:conn].execute(query, self.name, self.type, self.db)
+  db[:conn].execute(query, self.name, self.type, self.db)
 end
 
 
 
 end
 
-query = <<-SQL
-      INSERT INTO tweets (username, message) VALUES (?, ?)
-    SQL
+# query = <<-SQL
+#       INSERT INTO tweets (username, message) VALUES (?, ?)
+#     SQL
     
-    DB[:conn].execute(query, self.username, self.message)
+#     DB[:conn].execute(query, self.username, self.message)
 
