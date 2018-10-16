@@ -7,7 +7,6 @@ def initialize(id:, name:, type:, db:)
   self.name = name 
   self.type = type 
   self.db = db
-  self.class.all << self
 end
 
 def self.all 
