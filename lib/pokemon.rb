@@ -5,8 +5,8 @@ class Pokemon
   
 
 def initialize(args)
-  args.each do |k,v|
-    
+  args.each {|k,v| self.send("#{k}=", v)
+  #details.each {|attribute, value| self.send("#{attribute}=", value)}
 end
 
 def self.all 
