@@ -20,7 +20,8 @@ def self.save(name, type, db)
 end
 
 def self.find(id)
-  
+  pokemon = db.execute("SELECT * FROM pokemon WHERE id= ?", [val])
+  found_mon = Pokemon.new
 end
 
 
