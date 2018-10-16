@@ -26,7 +26,6 @@ def self.find(id, db)
   found_mon.id = pokemon[0][0]
   
 end
-binding.pry
 
 end
 
