@@ -2,11 +2,11 @@ class Pokemon
   attr_accessor :name, :type, :id, :db
   
 
-def initialize(id:, name:, type:, db: pokemon)
+def initialize(id:, name:, type:, db:)
   @id = id 
-  @name = keywords[:name] 
-  @type = keywords[:type] 
-  @db = keywords[:db]
+  @name = name 
+  @type = type 
+  @db = db
 end
 
 def self.all 
