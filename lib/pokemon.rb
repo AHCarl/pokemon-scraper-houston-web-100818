@@ -4,11 +4,7 @@ class Pokemon
   @@all = []
 
 def initialize(keywords)
-  self.id = id 
-  self.name = name 
-  self.type = type 
-  self.db = db
-  self.class.all << self
+  
 end
 
 def self.all 
