@@ -16,12 +16,7 @@ def self.all
 end 
 
 def self.save
-  query = <<-SQL
-    INSERT INTO pokemon (name, type, db) VALUES (?, ?, ?)
-  SQL
   
-  db.execute(query, self.name, self.type, self.db)
-  binding.pry
 end
 
 
