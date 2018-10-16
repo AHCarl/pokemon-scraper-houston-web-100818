@@ -9,6 +9,7 @@ def initialize(name:, type:, id:, db:)
   self.type = type 
   self.id = id 
   self.db = db
+  self.hp = 60
 end
 
 def self.all 
@@ -25,7 +26,7 @@ def self.find(id, db)
 end
 
 def alter_hp(amt, db)
-    db.execute("UPDATE pokemon SET hp = ? WHERE id = ?", amt, self.id)
+    db.execute("UPDATE pokemon SET hp = ? WHERE id = ?", amt, id)
     self.hp = amt
 end
 
