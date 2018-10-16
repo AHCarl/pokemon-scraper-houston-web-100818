@@ -28,7 +28,6 @@ end
 
 end
 
-Pokemon.save
 
 # query = <<-SQL
 #       INSERT INTO tweets (username, message) VALUES (?, ?)
